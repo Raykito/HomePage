@@ -1,12 +1,13 @@
 $(document).ready(function(){
-  $("#intra").click(function(){
-    $("#displayPerso").hide()
-    $("#displayIntra").fadeToggle(200)
-  })
-  $("#perso").click(function(){
-    $("#displayIntra").hide()
-    $("#displayPerso").fadeToggle(200)
-  })
+    time()
+    $("#intra").click(function(){
+	$("#displayPerso").hide()
+	$("#displayIntra").fadeToggle(200)
+    })
+    $("#perso").click(function(){
+	$("#displayIntra").hide()
+	$("#displayPerso").fadeToggle(200)
+    })
 })
 
 function time() {
@@ -21,5 +22,3 @@ function time() {
 
   setTimeout(time, 1000)
 }
-
-time()
