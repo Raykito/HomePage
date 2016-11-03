@@ -65,13 +65,6 @@ function time() {
   var secs = date.getSeconds()
   if (secs < 10)
     secs = "0" + secs
-  if ($("#checkTime").is(":checked")) {
-      $(".timeHours").css("color", "rgb(50, 50, 50)")
-      $(".timeMinutes").css("color", "rgb(50, 50, 50)")
-      $(".timeSeconds").css("color", "rgb(50, 50, 50)")
-      $("#checkHour").removeAttr("disabled")
-      $("#checkMinute").removeAttr("disabled")
-      $("#checkSecond").removeAttr("disabled")
     if ($("#checkHour").is(":checked")) {
       $(".timeMinutes").css("color", "rgb(50, 50, 50)")
       $(".timeSeconds").css("color", "rgb(50, 50, 50)")
@@ -102,16 +95,6 @@ function time() {
       $("#checkSecond").attr("disabled", "disabled")
       document.getElementById("displayTime").innerHTML = ''
     }
-  }
-  else {
-    $(".timeHours").css("color", "rgb(125, 125, 125)")
-    $(".timeMinutes").css("color", "rgb(125, 125, 125)")
-    $(".timeSeconds").css("color", "rgb(125, 125, 125)")
-    $("#checkHour").attr("disabled", "disabled")
-    $("#checkMinute").attr("disabled", "disabled")
-    $("#checkSecond").attr("disabled", "disabled")
-    document.getElementById("displayTime").innerHTML = ''
-  }
 
   setTimeout(time, 100)
 }
@@ -139,7 +122,6 @@ $(document).bind('keypress', function(event) {
 
 function save() {
   var checkBoxes = {
-    checkTime: ($("#checkTime").is(":checked")) ? (true) : (false),
     checkHour: ($("#checkHour").is(":checked")) ? (true) : (false),
     checkMinute: ($("#checkMinute").is(":checked")) ? (true) : (false),
     checkSecond: ($("#checkSecond").is(":checked")) ? (true) : (false)
@@ -152,10 +134,6 @@ function save() {
 function load() {
   var checkBoxes = JSON.parse(localStorage.getItem("checkBoxes"))
 
-  if (checkBoxes.checkTime == true)
-    $("#checkTime").prop("checked", true)
-  else
-    $("#checkTime").prop("checked", false)
   if (checkBoxes.checkHour == true)
     $("#checkHour").prop("checked", true)
   else

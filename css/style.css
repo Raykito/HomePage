@@ -194,7 +194,7 @@ nav
   float: right;
   margin-right: 170px;
   margin-top: -36px;
-  margin-bottom: 35px;
+  margin-bottom: 36px;
   opacity: 1;
   z-index: -1;
 }
@@ -242,6 +242,5 @@ fieldset
 
 .timeHours, .timeMinutes, .timeSeconds
 {
-  margin-left: 50px;
   color: rgb(50, 50, 50);
 }
