@@ -12,6 +12,10 @@ $(document).ready(function(){
     $("#youtube").animate({
       color: 'rgb(175, 175, 175)'
     })
+    $("#youporn").animate({
+      color: 'rgb(175, 175, 175)'
+    })
+    $("#search").attr("placeholder", "Google")
   })
 
   $("#youtube").click(function() {
@@ -22,6 +26,24 @@ $(document).ready(function(){
     $("#google").animate({
       color: 'rgb(175, 175, 175)'
     })
+    $("#youporn").animate({
+      color: 'rgb(175, 175, 175)'
+    })
+    $("#search").attr("placeholder", "YouTube")
+  })
+
+  $("#youporn").click(function() {
+    $("#youporn").animate({
+      color: 'rgb(100, 100, 100)'
+    })
+    $("#bar").attr("action", "https://www.youporn.com/results")
+    $("#google").animate({
+      color: 'rgb(175, 175, 175)'
+    })
+    $("#youtube").animate({
+      color: 'rgb(175, 175, 175)'
+    })
+    $("#search").attr("placeholder", "YouPorn")
   })
 
   $(".subMenuCode").animate({
@@ -111,6 +133,21 @@ $(document).keydown(function (e) {
     }
     else {
         n = 0
+    }
+});
+
+var key = [89, 79, 85, 80, 79, 82, 78, 38, 38, 40, 40, 37, 39, 37, 39],
+i = 0;
+$(document).keydown(function (y) {
+    if (y.keyCode === key[i++]) {
+        if (i === key.length) {
+          $("#search").val('')
+          $("#youporn").fadeIn(1000)
+          i = 0
+        }
+    }
+    else {
+        i = 0
     }
 });
 
