@@ -229,17 +229,17 @@ fieldset
   display: none;
 }
 
-#paramsModal
+.modal
 {
   color: rgb(50, 50, 50);
 }
 
-#paramsModal h2
+.modal h2
 {
   text-align: center;
 }
 
-#paramsModal h3
+.modal h3
 {
   font-weight: bold;
 }
@@ -252,4 +252,107 @@ fieldset
 .timeHours, .timeMinutes, .timeSeconds
 {
   color: rgb(50, 50, 50);
+}
+
+#custom
+{
+  float: left;
+}
+
+.siteName
+{
+  margin-left: 10px;
+  margin-bottom: 20px;
+  width: 85%;
+  border: none;
+  outline: none;
+  box-shadow: 0px 1px 0px rgb(191, 191, 191);
+}
+
+.siteLink
+{
+  margin-left: 20px;
+  width: 85%;
+  border: none;
+  outline: none;
+  box-shadow: 0px 1px 0px rgb(191, 191, 191);
+}
+
+#saveCustom
+{
+  float: left;
+}
+
+#customMenu .modal-body
+{
+  margin-bottom: 40px;
+}
+
+#addCustom
+{
+  margin-top: 10px;
+  float: left;
+}
+
+#cancelAdd
+{
+  float: left;
+}
+
+#saveLink
+{
+  float: right;
+}
+
+#addLink .modal-title
+{
+  text-align: center;
+}
+
+#addLink .modal-body
+{
+  margin-bottom: 0px;
+}
+
+#addLink #name
+{
+  margin-left: 10px;
+  border: none;
+  outline: none;
+  box-shadow: 0px 1px 0px rgb(191, 191, 191);
+}
+
+#addLink #link
+{
+  margin-left: 20px;
+  border: none;
+  outline: none;
+  box-shadow: 0px 1px 0px rgb(191, 191, 191);
+}
+
+.deleteLink
+{
+  padding: 5px 10px;
+  color: white;
+  border: none;
+  background-color: rgb(230, 60, 60);
+  float: right;
+  margin-top: 20px;
+  outline: none;
+  border-radius: 8px;
+}
+
+.deleteLink:hover
+{
+  background-color: rgb(200, 60, 60);
+}
+
+.deleteLink:active
+{
+  background-color: rgb(175, 60, 60);
+}
+
+#konamiModal .modal-body
+{
+  text-align: center;
 }
