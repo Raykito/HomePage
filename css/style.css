@@ -12,6 +12,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('fonts/Inconsolata.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
 #search
 {
   font-size: 16px;
@@ -196,7 +203,7 @@ nav
   margin-top: -36px;
   margin-bottom: 36px;
   opacity: 1;
-  z-index: -1;
+  z-index: 1;
 }
 
 fieldset
@@ -355,4 +362,45 @@ fieldset
 #konamiModal .modal-body
 {
   text-align: center;
+}
+
+#term output
+{
+  color: rgb(225, 225, 225);
+  font-family: 'Inconsolata';
+  font-size: 20px;
+}
+
+#term
+{
+  color: rgb(225, 225, 225);
+  margin-top: 100px;
+  height: 500px;
+  width : 600px;
+  border-color: black;
+  background-color: rgb(30, 30, 30);
+  font-family: 'Inconsolata';
+  font-size: 20px;
+  overflow: auto;
+  z-index: 0;
+}
+
+#cmd
+{
+  width: 90%;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.prompt
+{
+  float: left;
+  margin-right: 5px;
+  color: rgb(255, 205, 0);
+}
+
+.yellow-text
+{
+  color: rgb(255, 205, 0);
 }

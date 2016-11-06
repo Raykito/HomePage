@@ -11,6 +11,8 @@
     <script type="text/javascript" src="external/jquery/jquery.js"></script>
     <script type="text/javascript" src="js/jquery-ui.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/term.js"></script>
+    <script src="js/scripts.js"></script>
     <title>Home Page</title>
   </head>
 
@@ -19,53 +21,56 @@
     <div id="main_wrap">
       <header>
 
+      <!-- SEARCH BAR AND LINKS MENUS -->
       <div id="tool-bar">
         <nav>
+          <!-- LINKS MENUS -->
           <button type="button" class="button" id="mail"><a href="https://outlook.office.com/owa/?realm=epitech.eu">Mail</a></button>
           <button type="button" class="button" id="intra"><a>Intra</a></button>
           <button type="button" class="button" id="perso"><a>Perso</a></button>
-        <div id="intra-menu">
-          <ul id="displayIntra">
-            <li><a href="https://intra.epitech.eu/">Home</a></li>
-            <li><a href="https://intra.epitech.eu/module/#">Modules</a></li>
-            <li><a href="https://intra.epitech.eu/planning/#">Plannig</a></li>
-            <li><a href="https://intra.epitech.eu/user/#!/netsoul">Profil</a></li>
-            <li><a href="https://intra.epitech.eu/e-learning/#!">E-learning</a></li>
-          </ul>
-        </div>
-        <div id="menuPerso">
-          <ul id="displayPerso">
-            <li><span class="subMenu" id="code">Code</span></li>
-            <div id="subMenuCode">
-              <li class="subMenuCode"><a href="https://www.github.com">GitHub</a></li>
-              <li class="subMenuCode"><a href="http://www.w3schools.com/">w3schools</a></li>
-            </div>
-          </ul>
-        </div>
-
+          <div id="intra-menu">
+            <ul id="displayIntra">
+              <li><a href="https://intra.epitech.eu/">Home</a></li>
+              <li><a href="https://intra.epitech.eu/module/#">Modules</a></li>
+              <li><a href="https://intra.epitech.eu/planning/#">Plannig</a></li>
+              <li><a href="https://intra.epitech.eu/user/#!/netsoul">Profil</a></li>
+              <li><a href="https://intra.epitech.eu/e-learning/#!">E-learning</a></li>
+            </ul>
+          </div>
+          <div id="menuPerso">
+            <ul id="displayPerso">
+              <li><span class="subMenu" id="code">Code</span></li>
+              <div id="subMenuCode">
+                <li class="subMenuCode"><a href="https://www.github.com">GitHub</a></li>
+                <li class="subMenuCode"><a href="http://www.w3schools.com/">w3schools</a></li>
+              </div>
+            </ul>
+          </div>
         </nav>
 
+        <!-- CLICKABLE ICON -->
         <i class="fa fa-google fa-1-5x" id="google"></i>
         <i class="fa fa-youtube-play fa-1-5x" id="youtube"></i>
         <i class="fa fa-venus-mars fa-1-5x" id="youporn"></i> 
 
+        <!-- SEARCH BAR -->
         <form action="https://www.google.fr/search" method="get" autocomplete="off" id="bar">
           <input id="search" name="q" placeholder="Google" type="text">
         </form>
-
       </div>
 
       </header>
 
     </div>
 
+    <!-- DIGIT DISPLAY -->
     <p id="displayTime"></p>
-
-    <script src="js/scripts.js"></script>
   </body>
 
+  <!-- MODALS -->
   <div class="container">
 
+    <!-- PARAMETERS MODAL -->
     <div class="modal fade" id="paramsModal" role="dialog">
       <div class="modal-dialog">
 
@@ -93,6 +98,7 @@
       </div>
     </div>
 
+    <!-- KONAMI CODE MODAL -->
     <div class="modal fade" id="konamiModal" role="dialog">
       <div class="modal-dialog">
 
@@ -102,15 +108,16 @@
             <h2 class="modal-title">I'M WATCHING YA</h2>
           </div>
 
-          <div class="modal-body" id="konamiModalBody">
-          </div>
+          <div class="modal-body" id="konamiModalBody"></div>
         </div>
 
       </div>
     </div>
 
-      <div class="modal fade" id="customMenu" role="dialog">
-        <div class="modal-dialog">
+    <!-- CHANGING LINKS PERSO MENU MODALS -->
+    <div class="modal fade" id="customMenu" role="dialog">
+      <!-- LINKS OVERVIEW MODAL -->
+      <div class="modal-dialog">
         
         <div class="modal-content">
           <div class="modal-header">
@@ -131,6 +138,7 @@
 
       </div>
 
+      <!-- ADDING LINK MODAL -->
       <div class="modal fade" id="addLink" role="dialog">
         <div class="modal-dialog modal-sm">
         
@@ -154,5 +162,16 @@
       </div>
     </div> 
 
+  </div>
+
+  <!-- TERMINAL -->
+  <div class="container">
+    <div class="well" id="term">
+      <output></output>
+      <div id="input" class="input-line">
+        <div id="prompt"><div class="prompt">$></div></div>
+        <div><input type="text" id="cmd" autofocus="autofocus"></div>
+      </div>
+    </div>
   </div>
 </html>

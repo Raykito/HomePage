@@ -229,12 +229,6 @@ $(document).keydown(function (y) {
     }
 });
 
-$(document).bind('keypress', function(event) {
-  if (event.which === 80 && event.shiftKey) {
-    $("#paramsModal").modal("show")
-  }
-})
-
 function saveCheckboxes() {
   var checkBoxes = {
     checkHour: ($("#checkHour").is(":checked")) ? (true) : (false),
